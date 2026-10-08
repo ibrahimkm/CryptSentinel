@@ -1,0 +1,43 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+
+# Python & Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Databases & runtime SQLite files
+*.db
+*.db-wal
+*.db-shm
+server/tests/test_*.db*
+
+# Runtime directories and test sandboxes
+monitored_sandbox/
+quarantine/
+server/tests/*_sandbox*
+server/tests/*_vault*
+
+# Logs & OS artifacts
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,63 @@
+{
+  "modelName": "RandomForestClassifier",
+  "modelVersion": "1.0.0-academic",
+  "trainedAt": "2026-09-29T20:36:17.356607",
+  "dataset": {
+    "totalSamples": 1500,
+    "trainSamples": 1200,
+    "testSamples": 300,
+    "synthetic": true,
+    "description": "Synthetic behavioral telemetry dataset modeled for academic anti-ransomware research."
+  },
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1Score": 1.0,
+    "rocAuc": 1.0
+  },
+  "confusionMatrix": {
+    "trueNegative": 150,
+    "falsePositive": 0,
+    "falseNegative": 0,
+    "truePositive": 150,
+    "matrix": [
+      [
+        150,
+        0
+      ],
+      [
+        0,
+        150
+      ]
+    ],
+    "labels": [
+      "BENIGN",
+      "RANSOMWARE_LIKE"
+    ]
+  },
+  "featureImportances": {
+    "extension_change_count": 0.2908,
+    "suspicious_extension_count": 0.2009,
+    "mutations_per_second": 0.1702,
+    "files_created": 0.1105,
+    "high_entropy_file_ratio": 0.0894,
+    "files_deleted": 0.0588,
+    "files_modified": 0.0396,
+    "average_entropy": 0.0288,
+    "process_cpu": 0.01,
+    "total_bytes_modified": 0.0008,
+    "process_memory": 0.0002,
+    "entropy_delta": 0.0,
+    "burst_duration": 0.0,
+    "maximum_entropy": 0.0,
+    "average_file_size": 0.0,
+    "number_of_active_processes": 0.0
+  },
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 12,
+    "class_weight": "balanced",
+    "random_state": 42
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "features": [
+    {
+      "name": "files_modified",
+      "type": "integer",
+      "description": "Number of files modified in the observation window"
+    },
+    {
+      "name": "files_created",
+      "type": "integer",
+      "description": "Number of new files created in the observation window"
+    },
+    {
+      "name": "files_deleted",
+      "type": "integer",
+      "description": "Number of original files deleted in the observation window"
+    },
+    {
+      "name": "mutations_per_second",
+      "type": "float",
+      "description": "Velocity of filesystem mutation events per second"
+    },
+    {
+      "name": "average_entropy",
+      "type": "float",
+      "description": "Average Shannon entropy across all inspected files (0.0 to 8.0)"
+    },
+    {
+      "name": "maximum_entropy",
+      "type": "float",
+      "description": "Maximum Shannon entropy observed in the window"
+    },
+    {
+      "name": "entropy_delta",
+      "type": "float",
+      "description": "Shift in entropy relative to baseline (4.2 typical baseline)"
+    },
+    {
+      "name": "high_entropy_file_ratio",
+      "type": "float",
+      "description": "Proportion of modified files exhibiting entropy >= 7.2"
+    },
+    {
+      "name": "suspicious_extension_count",
+      "type": "integer",
+      "description": "Count of files bearing known ransomware or suspicious extensions"
+    },
+    {
+      "name": "extension_change_count",
+      "type": "integer",
+      "description": "Number of files whose extension was altered during mutation"
+    },
+    {
+      "name": "total_bytes_modified",
+      "type": "integer",
+      "description": "Total payload size in bytes modified or written in window"
+    },
+    {
+      "name": "average_file_size",
+      "type": "float",
+      "description": "Mean size in bytes of affected files"
+    },
+    {
+      "name": "process_cpu",
+      "type": "float",
+      "description": "CPU utilization percentage of suspicious process"
+    },
+    {
+      "name": "process_memory",
+      "type": "float",
+      "description": "Memory footprint in megabytes of suspicious process"
+    },
+    {
+      "name": "number_of_active_processes",
+      "type": "integer",
+      "description": "Total number of live concurrent system processes"
+    },
+    {
+      "name": "burst_duration",
+      "type": "float",
+      "description": "Elapsed duration in seconds of the mutation burst"
+    }
+  ],
+  "target": {
+    "name": "label",
+    "classes": [
+      "BENIGN",
+      "RANSOMWARE_LIKE"
+    ],
+    "mapping": {
+      "BENIGN": 0,
+      "RANSOMWARE_LIKE": 1
+    }
+  }
+}
